@@ -1,28 +1,33 @@
 # Few-Shot Training & Testing on MVTec AD
 
 ## Overview
-Em thực hiện **train** và **test** lại trên bộ dữ liệu **MVTec AD** với kịch bản few-shot.  
+Em thực hiện **train** và **test** lại trên bộ dữ liệu **MVTec AD** với kĩ thuật few-shot.  
 Em sử dụng hai file chính:
 
 - `train_few_mvtec.py` sửa từ `train_few.py`
 - `test_few_mvtec.py` sửa từ `test_few.py`
 
-Các thay đổi chính:
+## Các thay đổi chính
 - **Loader** được chỉnh lại để chỉ load **normal data** (MVTec chỉ training trên dữ liệu bình thường).
 - Bỏ hoàn toàn phần xử lý anomaly data trong training.
 - Viết thêm file `dataset/mvtec_few.py` để config cho dataset MVTec.
 - Trong `dataset/`, k-shot seed được lấy từ **WinCLIP** (k-shot = 5, chọn ngẫu nhiên từ tập train).
+- Bổ sung **data augmentation** từ `utils.py` để sinh thêm dữ liệu training.
+- Sử dụng folder **CLIP/** để load pretrain **CLIP ViT** phục vụ huấn luyện.
+- Dữ liệu MVTec được lưu trên Google Drive và unzip trực tiếp khi train/test trên Colab.
 
 ## Dataset
 - Bộ dữ liệu: **MVTec AD**
 - Cấu hình dữ liệu nằm trong: `dataset/mvtec_few.py`
 - K-shot: **5-shot**
 - Lấy mẫu ngẫu nhiên từ tập train theo cùng seed với WinCLIP.
+- Tất cả dữ liệu train chỉ bao gồm ảnh **normal**, kết hợp với data augmentation.
 
 ## Notebook Training
 - Notebook dùng để train:  
   [Google Colab Link](https://colab.research.google.com/drive/1VPN03REi1EVkOz_TWtlB7SXvoQwgUaGU#scrollTo=E-d8trXsMnMb)
 - Train trên **GPU T4**.
+- Dữ liệu MVTec được unzip từ Google Drive trước khi train.
 
 ## Performance (Results)
 
@@ -37,13 +42,17 @@ Các thay đổi chính:
 | cable       | 0.871252 | 0.622751 |
 | capsule     | 0.908385 | 0.702832 |
 | hazelnut    | 0.977062 | 0.989643 |
-| metal_nut  | 0.906313 | 0.605572 |
+| metal_nut   | 0.906313 | 0.605572 |
 | pill        | 0.988642 | 0.861702 |
 | screw       | 0.975779 | 0.671244 |
 | toothbrush  | 0.973655 | 0.925000 |
 | transistor  | 0.791644 | 0.609167 |
 | zipper      | 0.934509 | 0.914653 |
 
+> **Note:**  
+> - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc của MVTec.  
+> - Khi đánh giá bằng CRANE trên AC, CRANE tính ra probability bằng **cosine similarity giữa text feature và global image features**, sau đó qua softmax (`test.py` & `metrics.py`).  
+> - Cách này khác với MVFA-AD, vốn sử dụng **max pooling trên mask** và chọn pixel có anomaly score cao nhất (`test.py`, hàm `test`).
 
 ## Chạy files
 ```bash
