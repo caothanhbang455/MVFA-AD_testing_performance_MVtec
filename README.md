@@ -54,7 +54,8 @@ Em sử dụng hai file chính:
 > - Đánh giá của CRANE https://arxiv.org/pdf/2504.11055 trên AC tính ra probability bằng **cosine similarity giữa text feature và global image features**, sau đó qua softmax (`test.py` & `metrics.py`).  
 > - Cách này khác với MVFA-AD em tiếp cận, sử dụng **max pooling trên mask** và chọn pixel có anomaly score cao nhất (`test.py`, hàm `test`).
 > - Em chỉ train khác với MVFA-AD gốc là dùng k-shot bằng 5 thay vì là 4.
-> - Dạ trung bình AUC của pixel-level là 94.25, trong khi image-level (AC) chỉ có 85.35 
+> - Dạ trung bình AUC của pixel-level là 94.25, trong khi image-level (AC) chỉ có 85.35
+> - Dạ em có lưu lại checkpoint cho việc lưu trữ kết quả về sau, mỗi class trong MVTEC là một file `.pth`
 
 
 ## Chạy files
