@@ -53,6 +53,8 @@ Em sử dụng hai file chính:
 > - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc của MVTec.  
 > - Khi đánh giá bằng CRANE trên AC, CRANE tính ra probability bằng **cosine similarity giữa text feature và global image features**, sau đó qua softmax (`test.py` & `metrics.py`).  
 > - Cách này khác với MVFA-AD, vốn sử dụng **max pooling trên mask** và chọn pixel có anomaly score cao nhất (`test.py`, hàm `test`).
+> - Em chỉ train khác với MVFA-AD gốc là dùng k-shot bằng 5 thay vì là 4.
+
 
 ## Chạy files
 ```bash
