@@ -12,8 +12,8 @@ Em sử dụng hai file chính:
 - Bỏ hoàn toàn phần xử lý anomaly data trong training.
 - Viết thêm file `dataset/mvtec_few.py` để config cho dataset MVTec.
 - Trong `dataset/`, k-shot seed được lấy từ **WinCLIP** (k-shot = 5, chọn ngẫu nhiên từ tập train).
-- Bổ sung **data augmentation** từ `utils.py` để sinh thêm dữ liệu training.
-- Sử dụng folder **CLIP/** để load pretrain **CLIP ViT** phục vụ huấn luyện.
+- MVFA-AD dùng **data augmentation** từ `utils.py` để sinh thêm dữ liệu training.
+- Folder **CLIP/** để load pretrain **CLIP ViT** phục vụ huấn luyện.
 - Dữ liệu MVTec được lưu trên Google Drive và unzip trực tiếp khi train/test trên Colab.
 
 ## Dataset
