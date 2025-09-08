@@ -2,7 +2,7 @@
 
 ## Overview
 Em thực hiện **train** và **test** lại trên bộ dữ liệu **MVTec AD** với kĩ thuật few-shot.  
-Em lưu checkpoints trên drive sau https://drive.google.com/drive/u/0/folders/1ch6Z-FwQntD23VKfRxwIuMXTqUwm-fUv
+Em lưu checkpoints trên drive sau https://drive.google.com/drive/u/0/folders/1ch6Z-FwQntD23VKfRxwIuMXTqUwm-fUv.
 Em sử dụng hai file chính:
 
 - `train_few_mvtec.py` sửa từ `train_few.py`
