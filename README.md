@@ -50,10 +50,11 @@ Em sử dụng hai file chính:
 | zipper      | 0.934509 | 0.914653 |
 
 > **Note:**  
-> - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc của MVTec.  
-> - Khi đánh giá bằng CRANE trên AC, CRANE tính ra probability bằng **cosine similarity giữa text feature và global image features**, sau đó qua softmax (`test.py` & `metrics.py`).  
-> - Cách này khác với MVFA-AD, vốn sử dụng **max pooling trên mask** và chọn pixel có anomaly score cao nhất (`test.py`, hàm `test`).
+> - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc trên MVTec.  
+> - Đánh giá của CRANE https://arxiv.org/pdf/2504.11055 trên AC tính ra probability bằng **cosine similarity giữa text feature và global image features**, sau đó qua softmax (`test.py` & `metrics.py`).  
+> - Cách này khác với MVFA-AD em tiếp cận, sử dụng **max pooling trên mask** và chọn pixel có anomaly score cao nhất (`test.py`, hàm `test`).
 > - Em chỉ train khác với MVFA-AD gốc là dùng k-shot bằng 5 thay vì là 4.
+> - Dạ trung bình AUC của pixel-level là 94.25, trong khi image-level (AC) chỉ có 85.35 
 
 
 ## Chạy files
