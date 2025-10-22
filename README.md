@@ -93,6 +93,25 @@ Em sử dụng hai file chính:
 | transistor     | 0.8148      | 0.6717     |
 | zipper         | 0.9337      | 0.8889     |
 
+### 5 shot with just seg feature for 2 task, 0.2:0.8
+
+| Class        | pAUROC   | AUROC   |
+|--------------|---------|---------|
+| grid         | 0.906300 | 0.946500 |
+| leather      | 0.992800 | 0.997300 |
+| tile         | 0.949100 | 0.973300 |
+| wood         | 0.960800 | 0.990400 |
+| bottle       | 0.968600 | 0.987300 |
+| cable        | 0.902500 | 0.628000 |
+| capsule      | 0.924800 | 0.662500 |
+| hazelnut     | 0.974300 | 0.990000 |
+| metal_nut    | 0.859400 | 0.439900 |
+| pill         | 0.975600 | 0.931300 |
+| screw        |          |          |
+| toothbrush   | 0.983000 | 0.977800 |
+| zipper       | 0.930600 | 0.634200 |
+| transistor   | 0.759700 | 0.605800 |
+
 
 > **Note:**  
 > - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc trên MVTec.  
