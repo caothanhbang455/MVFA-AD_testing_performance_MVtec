@@ -72,6 +72,26 @@ Em sử dụng hai file chính:
 | transistor     | 0.7693      | 0.6475     |
 | zipper         | 0.9392      | 0.9112     |
 
+### 10 shot
+
+| **Class**      | **pAUROC** | **AUROC** |
+|----------------|-------------|------------|
+| carpet         | 0.9850      | 0.9555     |
+| grid           | 0.9084      | 0.8329     |
+| leather        | 0.9930      | 0.9990     |
+| tile           | 0.9393      | 0.9394     |
+| wood           | 0.9636      | 0.9930     |
+| bottle         | 0.9832      | 0.9905     |
+| cable          | 0.8196      | 0.6239     |
+| capsule        | 0.9133      | 0.6406     |
+| hazelnut       | 0.9826      | 0.9868     |
+| metal_nut      | 0.9256      | 0.5401     |
+| pill           | 0.9885      | 0.8541     |
+| screw          | —           | —          |
+| toothbrush     | 0.9776      | 0.9000     |
+| transistor     | 0.8148      | 0.6717     |
+| zipper         | 0.9337      | 0.8889     |
+
 
 > **Note:**  
 > - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc trên MVTec.  
