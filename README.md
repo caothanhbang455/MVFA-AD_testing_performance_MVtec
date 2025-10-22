@@ -74,6 +74,7 @@ Em sử dụng hai file chính:
 
 ### 10 shot
 
+
 | **Class**      | **pAUROC** | **AUROC** |
 |----------------|-------------|------------|
 | carpet         | 0.9850      | 0.9555     |
@@ -87,7 +88,7 @@ Em sử dụng hai file chính:
 | hazelnut       | 0.9826      | 0.9868     |
 | metal_nut      | 0.9256      | 0.5401     |
 | pill           | 0.9885      | 0.8541     |
-| screw          | —           | —          |
+| screw          | 0.9719      | 0.7092     |
 | toothbrush     | 0.9776      | 0.9000     |
 | transistor     | 0.8148      | 0.6717     |
 | zipper         | 0.9337      | 0.8889     |
