@@ -67,7 +67,7 @@ Em sử dụng hai file chính:
 | hazelnut       | 0.9732      | 0.9886     |
 | metal_nut      | 0.9193      | 0.5103     |
 | pill           | 0.9839      | 0.8350     |
-| screw          | —           | —          |
+| screw          | 0.9709      | 0.7104     |
 | toothbrush     | 0.9607      | 0.8167     |
 | transistor     | 0.7693      | 0.6475     |
 | zipper         | 0.9392      | 0.9112     |
