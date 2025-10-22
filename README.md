@@ -32,6 +32,8 @@ Em sử dụng hai file chính:
 
 ## Performance (Results)
 
+### 5 shot
+
 | Class        | pAUROC   | AUROC   |
 |-------------|---------|--------|
 | carpet      | 0.989618 | 0.994382 |
@@ -49,6 +51,27 @@ Em sử dụng hai file chính:
 | toothbrush  | 0.973655 | 0.925000 |
 | transistor  | 0.791644 | 0.609167 |
 | zipper      | 0.934509 | 0.914653 |
+
+### 4 shot
+
+| **Class**      | **pAUROC** | **AUROC** |
+|----------------|-------------|------------|
+| carpet         | 0.9908      | 0.9839     |
+| grid           | 0.8199      | 0.7494     |
+| leather        | 0.9924      | 0.9969     |
+| tile           | 0.9284      | 0.9484     |
+| wood           | 0.9598      | 0.9904     |
+| bottle         | 0.9776      | 0.9976     |
+| cable          | 0.8476      | 0.6529     |
+| capsule        | 0.9242      | 0.6506     |
+| hazelnut       | 0.9732      | 0.9886     |
+| metal_nut      | 0.9193      | 0.5103     |
+| pill           | 0.9839      | 0.8350     |
+| screw          | —           | —          |
+| toothbrush     | 0.9607      | 0.8167     |
+| transistor     | 0.7693      | 0.6475     |
+| zipper         | 0.9392      | 0.9112     |
+
 
 > **Note:**  
 > - Trong quá trình train, em thấy performance chưa đạt như kết quả report trong paper gốc trên MVTec.  
