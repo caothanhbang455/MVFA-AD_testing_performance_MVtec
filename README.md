@@ -52,6 +52,27 @@ Em sử dụng hai file chính:
 | transistor  | 0.791644 | 0.609167 |
 | zipper      | 0.934509 | 0.914653 |
 
+### 5 shot with lr=1e-4
+
+| Class | pAUC | AUC |
+| :--- | :--- | :--- |
+| carpet | 0.9905 | 0.9996 |
+| grid | 0.9527 | 0.9916 |
+| leather | 0.9902 | 1.0000 |
+| tile | 0.9415 | 0.9755 |
+| wood | 0.9580 | 0.9939 |
+| bottle | 0.9501 | 0.9802 |
+| cable | 0.8875 | 0.6250 |
+| capsule | 0.9298 | 0.8584 |
+| hazelnut | 0.9786 | 0.9875 |
+| metal_nut | 0.9562 | 0.9096 |
+| pill | 0.9757 | 0.8914 |
+| screw | 0.9774 | 0.7567 |
+| toothbrush | 0.9856 | 0.9611 |
+| zipper | 0.9759 | 0.9624 |
+| transistor | 0.7535 | 0.7975 |
+| **Average** | **0.9469** | **0.9127** |
+
 ### 4 shot
 
 | **Class**      | **pAUROC** | **AUROC** |
