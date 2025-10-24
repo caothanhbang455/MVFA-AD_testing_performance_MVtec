@@ -130,7 +130,7 @@ Em sử dụng hai file chính:
 | zipper       | 0.934509        | 0.930600 (-0.39%)       | 0.914653      | 0.634200 (-28.05%)     |
 | transistor   | 0.791644        | 0.759700 (-4.19%)       | 0.609167      | 0.605800 (-0.34%)      |
 
-### Learning rate = 1e-4, adding medical data
+### Learning rate = 1e-4, adding medical data, using detection
 
 | Class | pAUC | AUC |
 | :--- | :--- | :--- |
